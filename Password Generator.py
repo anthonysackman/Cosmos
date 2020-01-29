@@ -1,4 +1,5 @@
 import random
+import string
 live = True
 while live:
     user_input1 = int(input("How Long Do You Want Your Password?"))
@@ -20,9 +21,13 @@ while live:
                 specadd = "specadd" + random.choice(speclist)
                 spec = spec - 1
                 continue
-    elif
+    elif user_input1 == user_input2:
+        while user_input2 > 0:
+            user_input2 = user_input2 - 1
+            passw = passw + random.choice(string.ascii_lowercase)
+            print(passw)
+
         
 
     
     req = "user_input1" + "user_input2" + "user_input3"
-    finalpw = "10"

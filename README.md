@@ -1,2 +1,0 @@
-# Cosmos
-Test Project Repo
