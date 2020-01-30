@@ -3,6 +3,7 @@ import string
 
 live = True
 specadd = str("")
+
 while live:
     user_input1 = int(input("How Long Do You Want Your Password?"))
     user_input2 = int(input("How Many Letters?"))
@@ -16,7 +17,6 @@ while live:
             error_input3 = int(input("Combined Number Higher Than Total Password Legnth, Please Try Again."))
             user_input3 = error_input2
             continue
-
         if user_input1 != user_input2 + user_input3:
             specadd = ""
             spec = user_input1 - (user_input2 + user_input3)
@@ -42,7 +42,7 @@ while live:
             print(finalpw)
             live = False
     elif user_input1 == user_input2:
-        finalpw = "Password: "
+        finalpw = ""
         while user_input2 > 0:
             user_input2 = user_input2 - 1
             finalpw = finalpw + random.choice(string.ascii_lowercase)
